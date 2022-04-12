@@ -54,4 +54,5 @@ class Solution:
                     post_order.append(top.val)
                     prev = top
                     stack.pop()
+
         return post_order

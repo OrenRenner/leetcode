@@ -51,4 +51,5 @@ class Solution:
                 stack.append(top.right)
             if top.left:
                 stack.append(top.left)
+
         return pre_order
