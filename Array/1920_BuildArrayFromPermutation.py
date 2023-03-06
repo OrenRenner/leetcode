@@ -38,10 +38,9 @@ Follow-up: Can you solve it without using an extra space (i.e., O(1) memory)?
 
 class Solution:
     def buildArray(self, nums: list) -> list:
-        for index, item in enumerate(nums):
-            nums[index] = nums[index] + len(nums) * (nums[item] % len(nums))
+        ans = [0 for _ in range(len(nums))]
 
-        for index, item in enumerate(nums):
-            nums[index] = item // len(nums)
+        for i, item in enumerate(nums):
+            ans[i] = nums[nums[i]]
 
-        return nums
+        return ans
